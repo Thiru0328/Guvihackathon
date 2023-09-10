@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    
+    <div class="qrcode">
+        <div class="formqrcode" id="myForm">
+          <form onsubmit="generateQRcode(event)">
+            
+
+            <div>Generate the QR code</div>
+
+            <div class="box">
+              <label class="label">Enter your data</label>
+              <div>
+              <input id="url" class="myInput" type="url"  placeholder="Enter your url" required/>
+            </div>
+            </div>
+
+            <div class="box">
+              <div class="label">Width</div>
+              <select id="sizes">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                 <option value="300">300</option>
+                 <option value="400">400</option>
+                 <option value="500">500</option>
+                 <option value="600">600</option>
+                 <option value="700">700</option>
+                 <option value="800">800</option>
+                 <option value="900">900</option>
+                 <option value="1000">1000</option>
+              </select>
+            </div>
+
+
+            <div class="box">
+              <label class="label">Height</label>
+              <select id="sizes">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                 <option value="300">300</option>
+                 <option value="400">400</option>
+                 <option value="500">500</option>
+                 <option value="600">600</option>
+                 <option value="700">700</option>
+                 <option value="800">800</option>
+                 <option value="900">900</option>
+                 <option value="1000">1000</option>
+              </select>
+            </div>
+        
+
+            
+            <div class="form-single-group">
+                <label class="label">Qr color:</label>
+                  <input type="color" id="favcolor" name="favcolor" background-color="green" value="#ff0000"/>
+              
+              </div>
+
+              
+            <div class="form-single-group">
+                <label class="label">Background color:</label>
+                  <input type="color" id="favcolor" name="favcolor" background-color="black" value="#000000"/>        </div>
+
+              <div class="box">
+                <label class="label" for="inputGroupSelect01">Options</label>
+                <select class="form-select" id="inputGroup">
+                  <option selected>Format</option>
+                  <option value="1">PNG</option>
+                  <option value="2">JPG</option>
+                  <option value="3">SVG</option>
+                </select>
+              </div>
+
+              <div class="footer">
+            <div class="box">
+              <button onclick="addEventListener()" class="myButton" id="generate" type="submit" href="">Generate</button>
+            
+            </div>
+            <div class="box">
+                <button onclick="addEventListener()" class="myButton" id="download" type="submit" href="">Download</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+</html>

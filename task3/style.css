@@ -1,0 +1,58 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:10px;
+    padding:10px;
+}
+@media  screen and (max-width:2920px) {
+    .qrcode{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100%;
+        position:relative
+        
+    }
+    
+}
+
+.formqrcode{
+    border:1px solid black;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: left;
+    flex-wrap: wrap;
+    padding:1em;
+    margin:3em;
+    width:50%;
+    
+
+}
+
+#url{
+    width:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center
+    
+}
+
+#sizes{
+    width:500px;
+}
+
+.box{
+    width:500px;
+
+}
+.myButton{
+    width:100%;
+    margin:10px;
+    font-weight: bolder;
+    background-color:blue;
+    
+}
+#inputGroup{
+    width:500px;
+}
